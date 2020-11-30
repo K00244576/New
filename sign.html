@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title> SLide Show</title>
+    <link rel="stylesheet" href="slide_show.css">
+</head>
+<body>
+    <div class="mobile">
+        <div class="bini"> <a href="index.html"><img src="images/logo.png" class="logo"></a></div>
+    <header>
+       
+        
+         
+        <ul>
+        <li><a href="index.html">Home</a></li>
+         <li><a href="product.html">Menu</a></li>
+         <li><a href="#">What's New</a></li>
+         <li><a href="sign.html">Sign Up</a></li>
+        <li><a href="login.html">Account</a></li>
+         <li><a href="bms.html">BMS</a></li>
+              <label for="searchfield">
+                    <input type="search" name="searchfield" id="searchfield" placeholder="Search...">
+                </label>
+         <span id="clock"></span> <!-- We will insert the time into this element. -->
+
+        
+        </ul>
+        
+        </header>
+
+<div class="mo">
+<form action="http://litstudentprojects.net/A1signUpNewsletter.php" method="post"> 
+
+<fieldset>
+            <h3>Sign up to our newsletter</h3>
+            <p><label>First name:</label><input type="text" placeholder="eg Peter" name="fname">
+            </p>
+
+            <p><label>Surname:</label><input type="text"  name="sname">
+            </p>
+
+            <p><label>Email:</label><input type="text" placeholder="example Williepeter@ymail.com" name="email1">                   
+            </p>
+
+            <p><label>Address Line 1:</label><input type="text" placeholder="eg 12 John Gate" name="address1">
+            </p>
+
+            <p><label>Address Line 2:</label><input type="text"  name="address2">
+            </p>
+
+            <label>Date of birth:</label>
+            <input type="date" name="dob">
+
+            <p>
+            <label for="typeCooking">What type of cooking are  you interested in
+            </label> 
+            <select name="typeCooking" id="typeCooking">
+            <option value="family">Family meals</option>
+            <option value="fine">Fine dining</option>
+            <option value="gluten">Gluten free</option>
+            <option value="budget">Cooking on a budget</option>
+            <option value="kids">Cooking with kids</option> 
+
+            </select>
+            </p>
+
+            <p>
+            <input type="submit" class="button" value="Submit">
+             <input type="reset" class="button"></p>
+
+
+            <p><a href="Index.html">
+            <img alt src="studentImages/button_cancel.png"></a> </p>
+
+            <input type ="hidden" value="Chicken Creole" name="recipe">
+
+</fieldset>
+
+    </form></div>
+        
+    <footer>
+        K00244576@student.lit.ie &copy
+    </footer>
+    <script>
+
+
+// Define a function to display the current time
+function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+displayTime()                    // Display the time right away
+setInterval(displayTime, 1000);  // And then update it every second. 
+
+</script>
+        <script src="slide_show.js"></script> 
+</body>
+</html>
+ 
